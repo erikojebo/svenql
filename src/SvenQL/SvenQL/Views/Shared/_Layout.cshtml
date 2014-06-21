@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+    @Styles.Render("~/Content/css")
+    @RenderSection("styles", required: false)
+
+    <script type="text/javascript">
+        var sven = sven || {};
+        sven.url = sven.url || {};
+        sven.url.rootUrl = '@Url.Content("~")';
+    </script>
+</head>
+<body>
+    <header>
+    </header>
+    
+    <section id="page-content">
+        @RenderBody()
+    </section>
+    
+
+    @Scripts.Render("~/bundles/scripts")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

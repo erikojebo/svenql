@@ -1,0 +1,15 @@
+﻿@section styles {
+    <link href="~/Content/Index.css" rel="stylesheet" />
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/query")
+}
+
+<form data-bind="submit: executeQuery">
+    <fieldset>
+        <legend>Query</legend>
+        <textarea name="query" data-bind="value: query"></textarea>
+        <input type="submit" value="Execute" />
+    </fieldset>
+</form>
