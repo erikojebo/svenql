@@ -15,7 +15,7 @@
     <AssemblyName>SvenQL</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -131,9 +131,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Scripts\eventAggregator.js" />
+    <Content Include="Scripts\lib\jquery.floatThead.js" />
+    <Content Include="Scripts\viewModels\rowViewModel.js" />
+    <Content Include="Scripts\viewModels\columnViewModel.js" />
+    <Content Include="Scripts\viewModels\resultSetViewModel.js" />
     <Content Include="Scripts\url.js" />
     <Content Include="Scripts\server.js" />
-    <Content Include="Scripts\queryPageViewModel.js" />
+    <Content Include="Scripts\viewModels\queryPageViewModel.js" />
     <Content Include="Scripts\index.js" />
   </ItemGroup>
   <ItemGroup>
@@ -178,9 +183,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>60727</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:54812/</IISUrl>
+          <IISUrl>http://localhost/SvenQL</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

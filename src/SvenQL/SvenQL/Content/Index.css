@@ -1,5 +1,68 @@
-﻿textarea[name=query] {
+﻿body{
+  font:12px normal Arial,sans-serif;
+  color:#34495E;
+}
+
+h1{
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:-2px;
+  font-size:2.5em;
+  margin:20px 0;
+}
+
+textarea[name=query] {
     display: block;
     width: 100%;
     height: 300px;
+}
+
+.result-sets {
+    list-style: none;
+    padding: 0;
+}
+
+.result-sets li {
+    margin-top: 20px;
+}
+
+.result-sets li:first-of-type {
+    margin-top: 0;
+}
+
+tbody td {
+    height: 20px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+tbody {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+table {
+    border:2px solid #1ABC9C;
+    border-collapse:collapse;
+    width:100%;
+}
+
+thead {
+    background:#1ABC9C;
+    color:white;
+}
+
+th,td{
+  padding: 5px 4px;
+}
+
+tbody tr:nth-child(even){
+  background:#ECF0F1;
+}
+
+tbody tr:hover{
+background:#BDC3C7;
+  color:#FFFFFF;
 }

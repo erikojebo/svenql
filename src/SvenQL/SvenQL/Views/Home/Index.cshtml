@@ -13,3 +13,22 @@
         <input type="submit" value="Execute" />
     </fieldset>
 </form>
+
+<section class="query-results">
+    <ol data-bind="foreach: resultSets" class="result-sets">
+        <li>
+            <table class="result-set">
+                <thead>
+                    <tr data-bind="foreach: columns">
+                        <th data-bind="text: name"></th>
+                    </tr>
+                </thead>
+                <tbody data-bind="foreach: rows">
+                    <tr data-bind="foreach: values">
+                        <td data-bind="text: value"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+    </ol>
+</section>
